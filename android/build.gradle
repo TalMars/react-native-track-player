@@ -68,20 +68,20 @@ dependencies {
     if (dash) {
         implementation project(':exoplayer-library-dash')
     } else {
-        compileOnly ':exoplayer-library-dash'
+        compileOnly project(':exoplayer-library-dash')
     }
     // ExoPlayer HLS
     if (hls) {
         implementation project(':exoplayer-library-hls')
     } else {
-        compileOnly ':exoplayer-library-hls'
+        compileOnly project(':exoplayer-library-hls')
     }
 
     // ExoPlayer SmoothStreaming
     if (smoothstreaming) {
         implementation project(':exoplayer-library-smoothstreaming')
     } else {
-        compileOnly ':exoplayer-library-smoothstreaming'
+        compileOnly project(':exoplayer-library-smoothstreaming')
     }
 
 //    // ExoPlayer Core
