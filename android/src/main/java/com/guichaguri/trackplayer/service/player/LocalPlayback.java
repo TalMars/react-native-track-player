@@ -162,6 +162,12 @@ public class LocalPlayback extends ExoPlayback<SimpleExoPlayer> {
     }
 
     @Override
+    public void pause() {
+        prepared = false;
+        super.pause();
+    }
+
+    @Override
     public void seekTo(long time) {
         prepare();
         super.seekTo(time);
