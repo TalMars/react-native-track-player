@@ -125,7 +125,7 @@ public class MetadataManager {
             pauseAction = createAction(notification, PlaybackStateCompat.ACTION_PAUSE, "Pause",
                     getIcon(options, "pauseIcon", R.drawable.pause));
             stopAction = createAction(notification, PlaybackStateCompat.ACTION_STOP, "Stop",
-                    getIcon(options, "stopIcon", R.drawable.stop));
+                    getIcon(options, "stopIcon", R.drawable.ic_close));
             forwardAction = createAction(notification, PlaybackStateCompat.ACTION_FAST_FORWARD, "Forward",
                     getIcon(options, "forwardIcon", R.drawable.forward));
             nextAction = createAction(notification, PlaybackStateCompat.ACTION_SKIP_TO_NEXT, "Next",
