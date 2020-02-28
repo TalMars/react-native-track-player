@@ -153,7 +153,7 @@ public class RNTrackPlayer: RCTEventEmitter {
         let autoUpdateMetadata: Bool = config["autoUpdateMetadata"] as? Bool ?? true
         player.automaticallyUpdateNowPlayingInfo = autoUpdateMetadata
         player.nowPlayingInfoController.set(keyValue: NowPlayingInfoProperty.isLiveStream(true))
-        
+
         // configure audio session - category, options & mode
         var sessionCategory: AVAudioSession.Category = .playback
         var sessionCategoryOptions: AVAudioSession.CategoryOptions = []
