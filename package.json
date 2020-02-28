@@ -10,7 +10,7 @@
     "format": "prettier --write \"src/**/*.ts\"",
     "prepare": "yarn build",
     "prepublishOnly": "git submodule update --init --recursive && yarn lint",
-    "postinstall": "git submodule update --init --recursive && yarn lint",
+    "postinstall": "grep url .gitmodules | sed 's/.*= //' | while read url; do git clone $url; done",
     "preversion": "yarn lint",
     "version": "yarn format && git add -A src",
     "postversion": "git push && git push --tags"
